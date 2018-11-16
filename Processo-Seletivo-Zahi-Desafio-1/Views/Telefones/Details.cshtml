@@ -1,0 +1,42 @@
+﻿@model Zahi_Desafio_1.Models.Telefone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Telefone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Client_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Client_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DDD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DDD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone_Number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Telefone_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
